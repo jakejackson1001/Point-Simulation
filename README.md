@@ -38,4 +38,4 @@ The development-only comparison script is retained outside the site folder and i
 
 This extracts the source to a temporary directory, runs its existing checks, and compares browser output with SciPy in 40 cases: five signed/zero reactivities × four step/ramp histories × two generation times. It checks all seven normalized states at 0, 0.001, 0.01, 0.1, 1, 10, 30 and 60 seconds, plus invalid input rejection. Threshold: 0.01% relative disagreement. Observed maximum: 1.81e-6 relative (0.000181%). This is sampled numerical agreement, not a rigorous bound for every UI input or time, and not physical validation. The browser does not run these checks on every update.
 
-Both models omit thermal feedback, spatial dynamics, burnup, poisoning, external sources, and decay heat. They do not predict electrical output, total heat removal, or a named plant's behavior. AI-assisted educational project; describe personal contributions accurately.
+Both models omit thermal feedback, spatial dynamics, burnup, poisoning, external sources, and decay heat. They do not predict electrical output, total heat removal, or a named plant's behavior.
