@@ -1,0 +1,77 @@
+/* Independent document layout: white paper, neutral text, ordinary links. */
+:root { color-scheme: light; font-family: Georgia, "Times New Roman", serif; color: #222; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 17px; line-height: 1.65; }
+a { color: #234b70; text-underline-offset: 3px; }
+a:hover { color: #111; }
+:focus-visible { outline: 2px solid #234b70; outline-offset: 3px; }
+header, main { max-width: 940px; margin: auto; padding: 20px 28px; }
+header { border-bottom: 1px solid #ccc; font: 14px/1.6 Arial, sans-serif; }
+.topbar, nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.topbar { justify-content: space-between; }
+.brand { font-weight: bold; }
+main { padding-top: 28px; padding-bottom: 60px; }
+section { margin-bottom: 36px; }
+h1, h2, h3 { line-height: 1.35; color: #111; }
+h1 { font-size: 28px; margin: 0 0 18px; }
+h2 { font-size: 23px; margin: 30px 0 16px; padding-bottom: 6px; border-bottom: 1px solid #ccc; }
+h3 { font-size: 19px; margin: 22px 0 10px; }
+p { margin: 0 0 16px; }
+small, .footnote, figcaption { font-size: 14px; color: #444; }
+.footnote { margin-top: 14px; }
+.scope { margin: 22px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 18px 0; }
+.equations, pre { font: 14px/1.9 monospace; overflow-x: auto; padding: 12px 0; margin: 14px 0; }
+.checks { padding-left: 24px; }
+.checks li { margin-bottom: 6px; }
+.table-wrap { overflow-x: auto; margin: 20px 0; }
+table { width: 100%; border-collapse: collapse; font: 14px/1.5 Arial, sans-serif; font-variant-numeric: tabular-nums; }
+caption { text-align: left; padding: 0 0 10px; font-weight: bold; }
+th, td { border: 1px solid #bbb; padding: 9px 12px; text-align: right; white-space: nowrap; }
+th { font-weight: bold; }
+th:first-child, td:first-child { text-align: left; }
+.result { margin-top: 30px; }
+figure { margin: 22px 0; }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { margin-top: 10px; }
+.card, .sandbox-layout > div { min-width: 0; }
+.sandbox-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 24px; margin-top: 24px; }
+.controls { font: 14px/1.5 Arial, sans-serif; }
+fieldset { border: 0; margin: 0 0 18px; padding: 0; }
+legend, label { display: block; font-weight: bold; margin-bottom: 6px; }
+.radios { display: flex; gap: 18px; }
+.radios label { font-weight: normal; }
+input, select { font: inherit; }
+input[type=number], select { width: 100%; padding: 7px; border: 1px solid #888; border-radius: 0; color: #222; background: #fff; }
+input:disabled { background: #eee; color: #666; }
+.field { margin-bottom: 18px; }
+.field small { display: block; font-size: 12px; margin-top: 5px; }
+.chart-head { display: flex; justify-content: space-between; gap: 12px; font: 14px/1.5 Arial, sans-serif; }
+.chart-head h3 { font: bold 16px/1.5 Arial, sans-serif; margin: 0 0 5px; }
+.chart-head strong { font-size: 18px; font-variant-numeric: tabular-nums; }
+.chart-head small { display: block; font-size: 12px; }
+.chart { display: block; width: 100%; height: auto; margin-top: 12px; }
+.chart text { fill: #444; font: 13px Arial, sans-serif; }
+.chart .grid { stroke: #ddd; }
+.chart .curve { stroke: #222; stroke-width: 2; fill: none; }
+.chart .baseline { stroke: #777; stroke-dasharray: 4 4; }
+.mini-values { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 12px/1.5 Arial, sans-serif; font-variant-numeric: tabular-nums; }
+.error { color: #733; font-size: 14px; margin-top: 12px; }
+details { margin-top: 22px; }
+summary { cursor: pointer; text-decoration: underline; }
+.sources { padding-left: 24px; }
+.sources li { margin: 10px 0; }
+footer { border-top: 1px solid #ccc; padding-top: 18px; font-size: 13px; }
+footer a { display: block; margin-top: 8px; }
+.skip { position: absolute; top: -80px; left: 12px; background: #fff; padding: 8px; }
+.skip:focus { top: 8px; }
+.sr-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 640px) {
+  header, main { padding-left: 16px; padding-right: 16px; }
+  body { font-size: 16px; }
+  .sandbox-layout { grid-template-columns: minmax(0,1fr); }
+  .controls { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 14px; }
+  .controls fieldset { grid-column: 1 / -1; }
+  .field { margin: 0; }
+  .chart text { font-size: 15px; }
+}

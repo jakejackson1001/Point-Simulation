@@ -1,0 +1,43 @@
+{
+  "beta": 0.006502,
+  "groups": [
+    {
+      "beta": 0.000215,
+      "lambda": 0.0124
+    },
+    {
+      "beta": 0.001424,
+      "lambda": 0.0305
+    },
+    {
+      "beta": 0.001274,
+      "lambda": 0.111
+    },
+    {
+      "beta": 0.002568,
+      "lambda": 0.301
+    },
+    {
+      "beta": 0.000748,
+      "lambda": 1.14
+    },
+    {
+      "beta": 0.000273,
+      "lambda": 3.01
+    }
+  ],
+  "generationTimes": [
+    0.0001,
+    1e-05
+  ],
+  "defaultGenerationTime": 0.0001,
+  "dollarBounds": [
+    -0.2,
+    0.2
+  ],
+  "rampBounds": [
+    1,
+    30
+  ],
+  "duration": 60
+}
