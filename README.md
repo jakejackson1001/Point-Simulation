@@ -71,11 +71,11 @@ On sign-out, the account's recovery cache stays on that browser so interrupted d
 The application is published on the `iron-ledger` branch of `jakejackson1001/Point-Simulation`. This branch contains the lifting app at its root; the repository’s `main` branch retains the existing project. ACOP was not modified or deployed over.
 
 1. Use the `iron-ledger` branch of `jakejackson1001/Point-Simulation`, or copy it to a dedicated repository. Do not use ACOP-DATABASE as the destination.
-2. From this directory, add its remote and push:
+2. To download the published application branch:
 
    ```sh
-   git remote add origin https://github.com/YOUR_ACCOUNT/YOUR_LIFTING_REPO.git
-   git push -u origin main
+   git clone --branch iron-ledger --single-branch https://github.com/jakejackson1001/Point-Simulation.git iron-ledger
+   cd iron-ledger
    ```
 
 3. In Netlify, **Add new project → Import an existing project → GitHub**, choose `Point-Simulation` and set the production branch to `iron-ledger` in a **new Netlify project**, then use:
